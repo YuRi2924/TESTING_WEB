@@ -678,7 +678,7 @@ nav img, nav h2 {
     filter: blur(3px);
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 21/9) {
     .SECTION_ONE video {
         width: 100%;
         height: auto;
@@ -1106,7 +1106,7 @@ nav img, nav h2 {
     filter: blur(3px);
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 21/9) {
     .SECTION_ONE video {
         width: 100%;
         height: auto;
@@ -1532,7 +1532,7 @@ nav img, nav h2 {
     filter: blur(3px);
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 21/9) {
     .SECTION_ONE video {
         width: 100%;
         height: auto;
@@ -1964,7 +1964,7 @@ nav img, nav h2 {
     filter: blur(3px);
 }
 
-@media (min-aspect-ratio: 16/9) {
+@media (min-aspect-ratio: 21/9) {
     .SECTION_ONE video {
         width: 100%;
         height: auto;
