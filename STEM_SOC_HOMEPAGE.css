@@ -671,15 +671,18 @@ nav img, nav h2 {
 }
 
 .SECTION_ONE video {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     z-index: -1;
     filter: blur(3px);
-    width: 100%;
-    height: auto;
 }
 
+@media (min-aspect-ratio: 16/9) {
+    .SECTION_ONE video {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* ----------------------------- Section Two and Four --------------------------------- */
@@ -1096,17 +1099,18 @@ nav img, nav h2 {
 }
 
 .SECTION_ONE video {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     z-index: -1;
     filter: blur(3px);
-    width: 100%;
-    height: auto;
-    
 }
 
-
+@media (min-aspect-ratio: 16/9) {
+    .SECTION_ONE video {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* ----------------------------- Section Two and Four --------------------------------- */
@@ -1521,15 +1525,18 @@ nav img, nav h2 {
 }
 
 .SECTION_ONE video {
-    width: 100%;
-    height: auto;
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     z-index: -1;
     filter: blur(3px);
 }
 
+@media (min-aspect-ratio: 16/9) {
+    .SECTION_ONE video {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* ----------------------------- Section Two and Four --------------------------------- */
@@ -1725,6 +1732,8 @@ nav img, nav h2 {
 }
     
 }  
+
+
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {  
 
@@ -1948,15 +1957,18 @@ nav img, nav h2 {
 }
 
 .SECTION_ONE video {
-    width: 100%;
-    height: auto;
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     z-index: -1;
     filter: blur(3px);
 }
 
+@media (min-aspect-ratio: 16/9) {
+    .SECTION_ONE video {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* ----------------------------- Section Two and Four --------------------------------- */
