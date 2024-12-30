@@ -671,7 +671,7 @@ nav img, nav h2 {
 }
 
 .SECTION_ONE video {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
@@ -1099,7 +1099,7 @@ nav img, nav h2 {
 }
 
 .SECTION_ONE video {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
@@ -1525,7 +1525,7 @@ nav img, nav h2 {
 }
 
 .SECTION_ONE video {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
@@ -1957,7 +1957,7 @@ nav img, nav h2 {
 }
 
 .SECTION_ONE video {
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
