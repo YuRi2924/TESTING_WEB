@@ -1,0 +1,2734 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added to ensure padding and border are included in the element's total width and height */
+  }
+
+  /* Navigation bar */
+  nav {
+    background-color: transparent;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1% 1%;
+    position: relative;
+    top: 30px;
+    width: 95%;
+    margin: auto;
+    animation:  ANIMATION_FADE_DOWN 0.5s ;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul.left-nav {
+    justify-content: flex-start;
+}
+
+nav ul.right-nav {
+    justify-content: flex-end;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    transition: 1s;
+    margin: 0 3px 0 3px;
+    border-radius: 0px;
+}
+
+nav a:hover{
+    color: #ffffff;
+    background-color: rgb(239, 32, 32);
+    border-radius: 0px ;
+    font-size: 20px;
+ 
+}
+
+nav img{
+    height: 100%;
+    padding: 0 0px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    
+}
+
+nav h2{
+    height: 100%;
+    padding: 0 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.fa-bars{
+    color: rgb(0, 0, 0);
+}
+
+/* Base styling for sidebar */
+.side_bar { 
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    height: 100vh;
+    width: 20%;
+    z-index: 999;
+    background-color: rgb(0 0 0 / 76%);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 20px;
+    transition: 1s; /* Smooth transition for transform and opacity */
+    opacity: 0; /* Start hidden */
+}
+
+/* Styling for list items in the sidebar */
+.side_bar li {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: left;
+    transition: 1s;
+    list-style: none;
+    border-bottom: solid white 2px;
+    padding: 20px;
+}
+
+/* Styling for links within the sidebar */
+.side_bar a {
+    text-decoration: none; /* Remove underline from links */
+    color: white;
+    transition: 1s; 
+    text-decoration: none;
+}
+
+/* Show the sidebar */
+.side_bar.show {
+    transform: translateX(0); /* Move it into view */
+    opacity: 1; /* Make it visible */
+    right: 0; /* Align with the right edge */
+}
+
+.menu {
+    display: none;
+}
+
+/* -------------------------------------------SECTION ONE----------------------------------------------*/
+
+.SECTION_ONE{
+    width: 100%;
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), 
+    url('STEM_SOC_ARCHIVES_IMAGE-FOUR.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Poppins";
+    
+}
+
+.SECTION_ONE_MAIN_CONTENT_PARENT_CONTAINER{
+    width: 100%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS{
+    width: 90%;
+    padding: 4%;
+    color: white;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS h1{
+    width: 100%;
+    font-size: 4rem;
+    line-height: 100%;
+    letter-spacing: 5px;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS p{
+    width: 100%;
+    font-size: 100%;
+    margin: 20px 0 20px 0;
+    border-top: solid 3px rgb(239, 32, 32);
+    padding-top: 10px;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS a{
+    margin-top: 20px;
+    text-decoration: none;
+    border: solid rgb(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS h6{
+    margin-top: 5%;
+    font-weight: 300;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS{
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 20px;
+    
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a:hover{
+    color: red;
+}
+
+/* ------------------------------------------SECTION 2---------------------------------------------- */
+
+.SECTION_TWO{
+    width: 100%;
+    height: 100vh;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.SECTION_TWO_PARENT{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.SECTION_TWO_CHILDREN {
+    width: 100%;
+    color: white;
+   
+ 
+}
+
+.IMAGE_CONTAINER{
+    background-color: #fefefe;
+    border-radius: 100%;
+    margin-left: 4%;
+    width: 60%;
+    box-shadow: 4px 4px 5px rgba(46, 11, 11, 0.427);
+}
+.SECTION_TWO_CHILDREN img{
+    width: 100%;
+   
+    
+}
+
+.CONTENT_CONTAINER{
+    margin: 0 4% 0 4%;
+}
+
+.CONTENT_CONTAINER h2{
+    font-size: 4rem;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.CONTENT_CONTAINER p{
+    text-align: justify;
+    margin-bottom: 20px;
+    border-top: #742a2a solid 4px;
+    border-bottom: #742a2a solid 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.CONTENT_CONTAINER a{
+margin-top: 20px;
+text-decoration: none;
+border: solid #742a2a(239, 32, 32) 2px;
+border-radius: 0px;
+padding: 8px;
+color: white;
+transition: 1s;
+background-color: #742a2a;
+}
+
+
+/* ------------------------------------------SECTION 3---------------------------------------------- */
+
+.SECTION_THREE{
+    width: auto;
+    height: auto;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 4%;
+}
+
+.SECTION_THREE_INTRODUCTORY{
+    margin-bottom: 20px;
+    text-align: justify;
+    
+}
+
+.SECTION_THREE_INTRODUCTORY h2{
+    font-size: 4rem;
+    color: white;
+}
+
+.SECTION_THREE_INTRODUCTORY p{
+    color: white;
+    padding-bottom: 20px;
+}
+
+.SECTION_THREE_PARENT_CONTAINER{
+    width: 100%;
+    background: linear-gradient(to right, #e3898a, #f7a6b9);
+    border-top-left-radius: 100px; /* Round the top-left corner */
+    border: 5px solid pink; /* Apply a pink border */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin: 0 4% 4% 4%;
+    box-shadow: 8px 8px 4px rgba(46, 11, 11, 0.427);
+
+    
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE{
+    padding: 4% 2% 4% 4% ;
+    width: 40%;
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE h3{
+    font-size: 2rem;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE p{
+    font-size: 80%;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.CATEGORIES{
+    display: flex;
+    flex-direction: row;
+}
+
+.CATEGORIES span{
+    color: white;
+    background-color: black;
+    font-size: 80%;
+    border-radius: 10px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+
+
+    
+
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT {
+    background-color: pink;
+    color: black;
+    width: 60%;
+    padding: 2% ;
+    display: flex;
+    flex-direction: column;
+}
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT h4{
+    margin: 10px 10px 10px 0;
+    font-size: 1.7rem;
+
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT a{
+    margin-top: 20px;
+    text-decoration: none;
+    border: solid #742a2a(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: #e74343;
+    text-align: center;
+}
+
+.SCROLLABLE_CONTENT {
+    height: 200px; /* Set a fixed height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Add padding for better readability */
+    border: 1px solid #000000; /* Optional: Add a border to visually separate */
+    text-align: justify;
+}
+
+
+
+
+
+.SCROLLABLE_CONTENT p{
+    font-size: 80%;
+}
+
+/* Styling the scrollbar */
+.SCROLLABLE_CONTENT::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-track {
+    background: #b33b3b; /* Background of the track */
+    border-radius: 5px; /* Rounded corners for the track */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-thumb {
+    background: #ad5959; /* Color of the thumb */
+    border-radius: 20px; /* Rounded corners for the thumb */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-thumb:hover {
+    background: #ff0000; /* Color of the thumb on hover */
+}
+
+/* Optional: For compatibility with Firefox */
+.SCROLLABLE_CONTENT {
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    scrollbar-color: #000000 #f1f1f1; /* Thumb color, track color */
+}
+
+.NEXT_PAGE a{
+    margin-top: 20px;
+    text-decoration: none;
+    border: solid #742a2a(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: #742a2a;
+    text-align: center;
+
+}
+
+/* ---------------------------------------FOOTER------------------------------------------- */
+
+
+.footer {
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_DARK.svg'); /* Dark background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+    font-family: "Poppins";
+    border-top: #742a2a solid 10px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    justify-content: space-around; /* Even spacing */
+    padding: 0 10%;
+}
+
+.footer-section {
+    flex: 1 1 30%; /* Equal width sections */
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff; /* Underline effect */
+    padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff; /* Link color */
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    color: #420c0c; /* Lighter hover effect */
+}
+
+.footer-section p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section p a:hover {
+    text-decoration: underline;
+    color: #420c0c;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #fff; /* Divider line */
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+}
+
+
+/* --------------------------------------------ANIMATION------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 320px){
+
+    .PHONE_HIDE{
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        font-size: 10px;
+    }
+  
+    .rLinks {
+        display: none;
+    }
+
+
+     
+    /* Navigation bar */
+      nav {
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 1% 1%;
+        position: relative;
+        top: 20px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul.left-nav {
+        justify-content: flex-start;
+    }
+    
+    nav ul.right-nav {
+        justify-content: flex-end;
+    }
+    
+    nav li {
+        height: 50px;
+    }
+    
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+        transition: 1s;
+        margin: 0 3px 0 3px;
+        border-radius: 40px;
+    }
+    
+    nav a:hover{
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 80px ;
+        font-size: 20px;
+    }
+
+    nav img{
+        height: 100%;
+        padding: 0 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    
+    nav h2{
+        height: 100%;
+        padding: 0 4px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .fa-bars{
+        color: rgb(0, 0, 0);
+    }
+    
+    /* Base styling for sidebar */
+    .side_bar { 
+        position: fixed;
+        top: 0;
+        right: -100%; /* Start off-screen */
+        height: 100vh;
+        width: 100%;
+        z-index: 999;
+        background-color: rgb(0 0 0 / 76%);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 20px;
+        transition: 1s; /* Smooth transition for transform and opacity */
+        opacity: 0; /* Start hidden */
+    }
+    
+    /* Styling for list items in the sidebar */
+    .side_bar li {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        text-align: left; /* Center align text and images */
+        transition: 1s; 
+        list-style: none;
+    }
+    
+    /* Styling for links within the sidebar */
+    .side_bar a {
+        text-decoration: none; /* Remove underline from links */
+        color: white;
+        transition: 1s; 
+        text-decoration: none;
+    }
+    
+    /* Show the sidebar */
+    .side_bar.show {
+        transform: translateX(0); /* Move it into view */
+        opacity: 1; /* Make it visible */
+        right: 0; /* Align with the right edge */
+    }
+
+/* ----------------------------- Section One --------------------------------- */
+.SECTION_ONE {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), url('STEM_SOC_ARCHIVES_IMAGE-FOUR.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins";
+}
+
+.SECTION_ONE_MAIN_CONTENT_PARENT_CONTAINER {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS {
+    width: 100%;
+    padding: 5%;
+    color: white;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS h1 {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS p {
+    width: 100%;
+    font-size: 70%;
+    margin: 5px 0 10px 0;
+    border-top: 3px solid rgb(239, 32, 32);
+    padding-top: 5px;
+    text-align: left;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS a {
+    font-size: 70%;
+    text-decoration: none;
+    border: 2px solid rgb(239, 32, 32);
+    padding: 4px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS{
+    width: 8%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 20px;
+    
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a:hover{
+    color: red;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------------- */
+.SECTION_TWO{
+    width: 100%;
+    height: auto;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.SECTION_TWO_PARENT{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 5% 5% 10% 5%;
+}
+
+.SECTION_TWO_CHILDREN {
+    width: 100%;
+    color: white;
+   
+}
+
+.IMAGE_CONTAINER{
+    background-color: #fefefe;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    margin-left: 0%;
+    width: 100%;
+    box-shadow: 4px 4px 5px rgba(46, 11, 11, 0.622);
+}
+.SECTION_TWO_CHILDREN img{
+    width: 100%;
+}
+
+.CONTENT_CONTAINER{
+    margin: 0 0% 0 0%;
+}
+
+.CONTENT_CONTAINER h2{
+    font-size: 2rem;
+    line-height: 100%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.CONTENT_CONTAINER p{
+    text-align: justify;
+    margin-bottom: 10px;
+    border-top: none;
+    border-bottom: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 70%;
+}
+.CONTENT_CONTAINER a{
+    margin-top: 10px;
+    text-decoration: none;
+    border: solid #742a2a(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: #742a2a;
+    font-size: 70%;
+}
+
+/* ------------------------------------------SECTION 3---------------------------------------------- */
+
+.SECTION_THREE{
+    width: 100%;
+    height: auto;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5% 5% 10% 5%;
+}
+
+.SECTION_THREE_INTRODUCTORY{
+    margin-bottom: 20px;
+    text-align: justify;
+    
+}
+
+.SECTION_THREE_INTRODUCTORY h2{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.SECTION_THREE_INTRODUCTORY p{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 70%;
+}
+
+.SECTION_THREE_PARENT_CONTAINER{
+    width: 100%;
+    background:pink;
+    border-radius: 10px; /* Round the top-left corner */
+    border: 2px solid rgb(0, 0, 0); /* Apply a pink border */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin: 0% 5% 10% 5%;
+    box-shadow: none;
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE{
+    padding: 4% ;
+    width: 100%;
+    border-bottom: #000000 2px solid;
+    background-color: white;
+    border-top-left-radius:10px; 
+    border-top-right-radius:10px; 
+    
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE h3{
+    font-size: 1rem;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE p{
+    font-size: 70%;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.CATEGORIES{
+    display: flex;
+    flex-direction: row;
+}
+
+.CATEGORIES span{
+    color: white;
+    background-color: black;
+    font-size: 70%;
+    border-radius: 0px;
+    padding: 4px;
+    margin-right: 10px;
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT {
+    background-color: pink;
+    color: black;
+    width: 100%;
+    padding: 2% ;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT h4{
+    margin: 5px;
+    font-size: 1.5rem;
+
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT a{
+    margin-top: 5px;
+    text-decoration: none;
+    border: 0px;
+    border-radius: 10px;
+    padding: 4px;
+    color: white;
+    transition: 1s;
+    background-color: #000000;
+    text-align: center;
+}
+
+.SCROLLABLE_CONTENT {
+    height: 200px; /* Set a fixed height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Add padding for better readability */
+    border: 1px solid #000000; /* Optional: Add a border to visually separate */
+    text-align: justify;
+
+}
+
+.SCROLLABLE_CONTENT p{
+    font-size: 70%;
+}
+
+/* Styling the scrollbar */
+.SCROLLABLE_CONTENT::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-track {
+    background: #b33b3b; /* Background of the track */
+    border-radius: 5px; /* Rounded corners for the track */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-thumb {
+    background: #ad5959; /* Color of the thumb */
+    border-radius: 20px; /* Rounded corners for the thumb */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-thumb:hover {
+    background: #ff0000; /* Color of the thumb on hover */
+}
+
+/* Optional: For compatibility with Firefox */
+.SCROLLABLE_CONTENT {
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    scrollbar-color: #000000 #f1f1f1; /* Thumb color, track color */
+}
+
+.NEXT_PAGE a{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border: solid #742a2a(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: #742a2a;
+    text-align: center;
+    font-size: 60%;
+}
+
+/* ----------------------------- Footer --------------------------------- */
+.footer {
+    background: url("STEM_SOC_BACKGROUND_COLOR_DARK.svg") center/cover no-repeat;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+    font-family: "Poppins";
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4%;
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 5px 0;
+    font-size: 70%;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.footer-section ul li a:hover,
+.footer-section p a:hover {
+    text-decoration: underline;
+    color: #ea4545;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 70%;
+    margin: 0 20px;
+}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px){
+   
+   
+    .PHONE_HIDE{
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        font-size: 10px;
+    }
+  
+    .rLinks {
+        display: none;
+    }
+
+
+     
+    /* Navigation bar */
+      nav {
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 1% 1%;
+        position: relative;
+        top: 20px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul.left-nav {
+        justify-content: flex-start;
+    }
+    
+    nav ul.right-nav {
+        justify-content: flex-end;
+    }
+    
+    nav li {
+        height: 50px;
+    }
+    
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+        transition: 1s;
+        margin: 0 3px 0 3px;
+        border-radius: 40px;
+    }
+    
+    nav a:hover{
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 80px ;
+        font-size: 20px;
+    }
+
+    nav img{
+        height: 100%;
+        padding: 0 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    
+    nav h2{
+        height: 100%;
+        padding: 0 4px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .fa-bars{
+        color: rgb(0, 0, 0);
+    }
+    
+    /* Base styling for sidebar */
+    .side_bar { 
+        position: fixed;
+        top: 0;
+        right: -100%; /* Start off-screen */
+        height: 100vh;
+        width: 100%;
+        z-index: 999;
+        background-color: rgb(0 0 0 / 76%);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 20px;
+        transition: 1s; /* Smooth transition for transform and opacity */
+        opacity: 0; /* Start hidden */
+    }
+    
+    /* Styling for list items in the sidebar */
+    .side_bar li {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        text-align: left; /* Center align text and images */
+        transition: 1s; 
+        list-style: none;
+    }
+    
+    /* Styling for links within the sidebar */
+    .side_bar a {
+        text-decoration: none; /* Remove underline from links */
+        color: white;
+        transition: 1s; 
+        text-decoration: none;
+    }
+    
+    /* Show the sidebar */
+    .side_bar.show {
+        transform: translateX(0); /* Move it into view */
+        opacity: 1; /* Make it visible */
+        right: 0; /* Align with the right edge */
+    }
+
+/* ----------------------------- Section One --------------------------------- */
+.SECTION_ONE {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), url('STEM_SOC_ARCHIVES_IMAGE-FOUR.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins";
+}
+
+.SECTION_ONE_MAIN_CONTENT_PARENT_CONTAINER {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS {
+    width: 100%;
+    padding: 5%;
+    color: white;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS h1 {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS p {
+    width: 100%;
+    font-size: 70%;
+    margin: 5px 0 10px 0;
+    border-top: 3px solid rgb(239, 32, 32);
+    padding-top: 5px;
+    text-align: left;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS a {
+    font-size: 70%;
+    text-decoration: none;
+    border: 2px solid rgb(239, 32, 32);
+    padding: 4px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS{
+    width: 8%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 20px;
+    
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a:hover{
+    color: red;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------------- */
+.SECTION_TWO{
+    width: 100%;
+    height: auto;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.SECTION_TWO_PARENT{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 5% 5% 10% 5%;
+}
+
+.SECTION_TWO_CHILDREN {
+    width: 100%;
+    color: white;
+   
+}
+
+.IMAGE_CONTAINER{
+    background-color: #fefefe;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    margin-left: 0%;
+    width: 100%;
+    box-shadow: 4px 4px 5px rgba(46, 11, 11, 0.622);
+}
+.SECTION_TWO_CHILDREN img{
+    width: 100%;
+}
+
+.CONTENT_CONTAINER{
+    margin: 0 0% 0 0%;
+}
+
+.CONTENT_CONTAINER h2{
+    font-size: 2rem;
+    line-height: 100%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.CONTENT_CONTAINER p{
+    text-align: justify;
+    margin-bottom: 10px;
+    border-top: none;
+    border-bottom: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 70%;
+}
+.CONTENT_CONTAINER a{
+    margin-top: 10px;
+    text-decoration: none;
+    border: solid #742a2a(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: #742a2a;
+    font-size: 70%;
+}
+
+/* ------------------------------------------SECTION 3---------------------------------------------- */
+
+.SECTION_THREE{
+    width: 100%;
+    height: auto;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5% 5% 10% 5%;
+}
+
+.SECTION_THREE_INTRODUCTORY{
+    margin-bottom: 20px;
+    text-align: justify;
+    
+}
+
+.SECTION_THREE_INTRODUCTORY h2{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.SECTION_THREE_INTRODUCTORY p{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 75%;
+}
+
+.SECTION_THREE_PARENT_CONTAINER{
+    width: 100%;
+    background:pink;
+    border-radius: 10px; /* Round the top-left corner */
+    border: 2px solid rgb(0, 0, 0); /* Apply a pink border */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin: 0% 5% 10% 5%;
+    box-shadow: none;
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE{
+    padding: 4% ;
+    width: 100%;
+    border-bottom: #000000 2px solid;
+    background-color: white;
+    border-top-left-radius:10px; 
+    border-top-right-radius:10px; 
+    
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE h3{
+    font-size: 1rem;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE p{
+    font-size: 75%;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.CATEGORIES{
+    display: flex;
+    flex-direction: row;
+}
+
+.CATEGORIES span{
+    color: white;
+    background-color: black;
+    font-size: 75%;
+    border-radius: 0px;
+    padding: 4px;
+    margin-right: 10px;
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT {
+    background-color: pink;
+    color: black;
+    width: 100%;
+    padding: 2% ;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT h4{
+    margin: 5px;
+    font-size: 1.5rem;
+
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT a{
+    margin-top: 5px;
+    text-decoration: none;
+    border: 0px;
+    border-radius: 10px;
+    padding: 4px;
+    color: white;
+    transition: 1s;
+    background-color: #000000;
+    text-align: center;
+}
+
+.SCROLLABLE_CONTENT {
+    height: 200px; /* Set a fixed height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Add padding for better readability */
+    border: 1px solid #000000; /* Optional: Add a border to visually separate */
+    text-align: justify;
+
+}
+
+.SCROLLABLE_CONTENT p{
+    font-size: 75%;
+}
+
+/* Styling the scrollbar */
+.SCROLLABLE_CONTENT::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-track {
+    background: #b33b3b; /* Background of the track */
+    border-radius: 5px; /* Rounded corners for the track */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-thumb {
+    background: #ad5959; /* Color of the thumb */
+    border-radius: 20px; /* Rounded corners for the thumb */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-thumb:hover {
+    background: #ff0000; /* Color of the thumb on hover */
+}
+
+/* Optional: For compatibility with Firefox */
+.SCROLLABLE_CONTENT {
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    scrollbar-color: #000000 #f1f1f1; /* Thumb color, track color */
+}
+
+.NEXT_PAGE a{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border: solid #742a2a(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: #742a2a;
+    text-align: center;
+    font-size: 60%;
+}
+
+/* ----------------------------- Footer --------------------------------- */
+.footer {
+    background: url("STEM_SOC_BACKGROUND_COLOR_DARK.svg") center/cover no-repeat;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+    font-family: "Poppins";
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4%;
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 5px 0;
+    font-size: 75%;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.footer-section ul li a:hover,
+.footer-section p a:hover {
+    text-decoration: underline;
+    color: #ea4545;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 75%;
+    margin: 0 20px;
+}
+}
+@media only screen and (min-width: 425px) and (max-width: 768px){
+    
+    .PHONE_HIDE{
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        font-size: 10px;
+    }
+  
+    .rLinks {
+        display: none;
+    }
+
+    video {
+        display: none;
+    }
+     
+    /* Navigation bar */
+      nav {
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 1% 1%;
+        position: relative;
+        top: 20px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul.left-nav {
+        justify-content: flex-start;
+    }
+    
+    nav ul.right-nav {
+        justify-content: flex-end;
+    }
+    
+    nav li {
+        height: 50px;
+    }
+    
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+        transition: 1s;
+        margin: 0 3px 0 3px;
+        border-radius: 40px;
+    }
+    
+    nav a:hover{
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 80px ;
+        font-size: 20px;
+    }
+
+    nav img{
+        height: 100%;
+        padding: 0 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    
+    nav h2{
+        height: 100%;
+        padding: 0 4px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .fa-bars{
+        color: rgb(0, 0, 0);
+    }
+    
+    /* Base styling for sidebar */
+    .side_bar { 
+        position: fixed;
+        top: 0;
+        right: -100%; /* Start off-screen */
+        height: 100vh;
+        width: 100%;
+        z-index: 999;
+        background-color: rgb(0 0 0 / 76%);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 20px;
+        transition: 1s; /* Smooth transition for transform and opacity */
+        opacity: 0; /* Start hidden */
+    }
+    
+    /* Styling for list items in the sidebar */
+    .side_bar li {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        text-align: left; /* Center align text and images */
+        transition: 1s; 
+        list-style: none;
+    }
+    
+    /* Styling for links within the sidebar */
+    .side_bar a {
+        text-decoration: none; /* Remove underline from links */
+        color: white;
+        transition: 1s; 
+        text-decoration: none;
+    }
+    
+    /* Show the sidebar */
+    .side_bar.show {
+        transform: translateX(0); /* Move it into view */
+        opacity: 1; /* Make it visible */
+        right: 0; /* Align with the right edge */
+    }
+
+/* ----------------------------- Section One --------------------------------- */
+.SECTION_ONE {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), url('STEM_SOC_ARCHIVES_IMAGE-FOUR.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins";
+}
+
+.SECTION_ONE_MAIN_CONTENT_PARENT_CONTAINER {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS {
+    width: 100%;
+    padding: 5%;
+    color: white;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS h1 {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS p {
+    width: 100%;
+    font-size: 70%;
+    margin: 5px 0 10px 0;
+    border-top: 3px solid rgb(239, 32, 32);
+    padding-top: 5px;
+    text-align: left;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS a {
+    font-size: 70%;
+    text-decoration: none;
+    border: 2px solid rgb(239, 32, 32);
+    padding: 4px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS{
+    width: 8%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 20px;
+    
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a:hover{
+    color: red;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------------- */
+.SECTION_TWO{
+    width: 100%;
+    height: auto;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.SECTION_TWO_PARENT{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 5% 5% 10% 5%;
+}
+
+.SECTION_TWO_CHILDREN {
+    width: 100%;
+    color: white;
+   
+}
+
+.IMAGE_CONTAINER{
+    background-color: #fefefe;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    margin-left: 0%;
+    width: 100%;
+    box-shadow: 4px 4px 5px rgba(46, 11, 11, 0.622);
+}
+.SECTION_TWO_CHILDREN img{
+    width: 100%;
+}
+
+.CONTENT_CONTAINER{
+    margin: 0 0% 0 0%;
+}
+
+.CONTENT_CONTAINER h2{
+    font-size: 2rem;
+    line-height: 100%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.CONTENT_CONTAINER p{
+    text-align: justify;
+    margin-bottom: 10px;
+    border-top: none;
+    border-bottom: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 70%;
+}
+.CONTENT_CONTAINER a{
+    margin-top: 10px;
+    text-decoration: none;
+    border: solid #742a2a(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: #742a2a;
+    font-size: 70%;
+}
+
+/* ------------------------------------------SECTION 3---------------------------------------------- */
+
+.SECTION_THREE{
+    width: 100%;
+    height: auto;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5% 5% 10% 5%;
+}
+
+.SECTION_THREE_INTRODUCTORY{
+    margin-bottom: 20px;
+    text-align: justify;
+    
+}
+
+.SECTION_THREE_INTRODUCTORY h2{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.SECTION_THREE_INTRODUCTORY p{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 75%;
+}
+
+.SECTION_THREE_PARENT_CONTAINER{
+    width: 100%;
+    background:pink;
+    border-radius: 10px; /* Round the top-left corner */
+    border: 2px solid rgb(0, 0, 0); /* Apply a pink border */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin: 0% 5% 10% 5%;
+    box-shadow: none;
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE{
+    padding: 4% ;
+    width: 100%;
+    border-bottom: #000000 2px solid;
+    background-color: white;
+    border-top-left-radius:10px; 
+    border-top-right-radius:10px; 
+    
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE h3{
+    font-size: 1rem;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE p{
+    font-size: 75%;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.CATEGORIES{
+    display: flex;
+    flex-direction: row;
+}
+
+.CATEGORIES span{
+    color: white;
+    background-color: black;
+    font-size: 75%;
+    border-radius: 0px;
+    padding: 4px;
+    margin-right: 10px;
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT {
+    background-color: pink;
+    color: black;
+    width: 100%;
+    padding: 2% ;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT h4{
+    margin: 5px;
+    font-size: 1.5rem;
+
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT a{
+    margin-top: 5px;
+    text-decoration: none;
+    border: 0px;
+    border-radius: 10px;
+    padding: 4px;
+    color: white;
+    transition: 1s;
+    background-color: #000000;
+    text-align: center;
+}
+
+.SCROLLABLE_CONTENT {
+    height: 200px; /* Set a fixed height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Add padding for better readability */
+    border: 1px solid #000000; /* Optional: Add a border to visually separate */
+    text-align: justify;
+
+}
+
+.SCROLLABLE_CONTENT p{
+    font-size: 75%;
+}
+
+/* Styling the scrollbar */
+.SCROLLABLE_CONTENT::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-track {
+    background: #b33b3b; /* Background of the track */
+    border-radius: 5px; /* Rounded corners for the track */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-thumb {
+    background: #ad5959; /* Color of the thumb */
+    border-radius: 20px; /* Rounded corners for the thumb */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-thumb:hover {
+    background: #ff0000; /* Color of the thumb on hover */
+}
+
+/* Optional: For compatibility with Firefox */
+.SCROLLABLE_CONTENT {
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    scrollbar-color: #000000 #f1f1f1; /* Thumb color, track color */
+}
+
+.NEXT_PAGE a{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border: solid #742a2a(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: #742a2a;
+    text-align: center;
+    font-size: 60%;
+}
+
+/* ----------------------------- Footer --------------------------------- */
+.footer {
+    background: url("STEM_SOC_BACKGROUND_COLOR_DARK.svg") center/cover no-repeat;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+    font-family: "Poppins";
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4%;
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 5px 0;
+    font-size: 70%;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.footer-section ul li a:hover,
+.footer-section p a:hover {
+    text-decoration: underline;
+    color: #ea4545;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 70%;
+    margin: 0 20px;
+}
+}  
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {  
+
+      
+    .PHONE_HIDE{
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        font-size: 15px;
+    }
+  
+    .rLinks {
+        display: none;
+    }
+
+    video {
+        display: none;
+    }
+     
+    /* Navigation bar */
+      nav {
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 1% 1%;
+        position: relative;
+        top: 20px;
+        width: 95%;
+        margin: auto;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul.left-nav {
+        justify-content: flex-start;
+    }
+    
+    nav ul.right-nav {
+        justify-content: flex-end;
+    }
+    
+    nav li {
+        height: 50px;
+    }
+    
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+        transition: 1s;
+        margin: 0 3px 0 3px;
+        border-radius: 40px;
+    }
+    
+    nav a:hover{
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 80px ;
+        font-size: 20px;
+    }
+
+    nav img{
+        height: 100%;
+        padding: 0 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    
+    nav h2{
+        height: 100%;
+        padding: 0 4px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+        line-height: 1;
+    }
+
+    .fa-bars{
+        color: rgb(0, 0, 0);
+    }
+    
+    /* Base styling for sidebar */
+    .side_bar { 
+        position: fixed;
+        top: 0;
+        right: -100%; /* Start off-screen */
+        height: 100vh;
+        width: 100%;
+        z-index: 999;
+        background-color: rgb(0 0 0 / 76%);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 20px;
+        transition: 1s; /* Smooth transition for transform and opacity */
+        opacity: 0; /* Start hidden */
+    }
+    
+    /* Styling for list items in the sidebar */
+    .side_bar li {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        text-align: left; /* Center align text and images */
+        transition: 1s; 
+        list-style: none;
+    }
+    
+    /* Styling for links within the sidebar */
+    .side_bar a {
+        text-decoration: none; /* Remove underline from links */
+        color: white;
+        transition: 1s; 
+        text-decoration: none;
+    }
+    
+    /* Show the sidebar */
+    .side_bar.show {
+        transform: translateX(0); /* Move it into view */
+        opacity: 1; /* Make it visible */
+        right: 0; /* Align with the right edge */
+    }
+
+/* ----------------------------- Section One --------------------------------- */
+.SECTION_ONE {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), url('STEM_SOC_ARCHIVES_IMAGE-FOUR.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins";
+}
+
+.SECTION_ONE_MAIN_CONTENT_PARENT_CONTAINER {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS {
+    width: 100%;
+    padding: 5%;
+    color: white;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS h1 {
+    width: 100%;
+    font-size: 4rem;
+    line-height: 100%;
+    letter-spacing: 5px;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS p {
+    width: 100%;
+    font-size: 80%;
+    margin: 5px 0 10px 0;
+    border-top: 3px solid rgb(239, 32, 32);
+    padding-top: 5px;
+    text-align: left;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS a {
+    font-size: 75%;
+    text-decoration: none;
+    border: 2px solid rgb(239, 32, 32);
+    padding: 4px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS h6 {
+    font-size: 60%;
+    margin-top: 5%;
+    font-weight: 300;
+    display: none;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS {
+    width: 10%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+    padding: 20px;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a {
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a:hover {
+    color: red;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+.SECTION_TWO{
+    width: 100%;
+    height: auto;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.SECTION_TWO_PARENT{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 5% 5% 10% 5%;
+}
+
+.SECTION_TWO_CHILDREN {
+    width: 100%;
+    color: white;
+   
+}
+
+.IMAGE_CONTAINER{
+    background-color: #fefefe;
+    border-radius: 100%;
+    margin-bottom: 10px;
+    margin-right: 5%;
+    width: 100%;
+    box-shadow: 4px 4px 5px rgba(46, 11, 11, 0.622);
+}
+.SECTION_TWO_CHILDREN img{
+    width: 100%;
+}
+
+.CONTENT_CONTAINER{
+    margin: 0 0% 0 0%;
+}
+
+.CONTENT_CONTAINER h2{
+    font-size: 2rem;
+    line-height: 100%;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.CONTENT_CONTAINER p{
+    text-align: justify;
+    margin-bottom: 10px;
+    border-top: none;
+    border-bottom: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 80%;
+}
+.CONTENT_CONTAINER a{
+    margin-top: 10px;
+    text-decoration: none;
+    border: solid #742a2a(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: #742a2a;
+    font-size: 70%;
+}
+
+/* ------------------------------------------SECTION 3---------------------------------------------- */
+
+.SECTION_THREE{
+    width: 100%;
+    height: auto;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 5% 5% 10% 5%;
+}
+
+.SECTION_THREE_INTRODUCTORY{
+    margin-bottom: 20px;
+    text-align: justify;
+    
+}
+
+.SECTION_THREE_INTRODUCTORY h2{
+    font-size: 2rem;
+    color: white;
+}
+
+.SECTION_THREE_INTRODUCTORY p{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 80%;
+}
+
+.SECTION_THREE_PARENT_CONTAINER{
+    width: 100%;
+    background:rgb(255, 255, 255);
+    border-radius: 10px; /* Round the top-left corner */
+    border: 2px solid rgb(0, 0, 0); /* Apply a pink border */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    margin: 0% 5% 5% 5%;
+    box-shadow: none;
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE{
+    padding: 4% ;
+    width: 60%;
+    border-bottom: none;
+    background-color: white;
+    border-top-left-radius:10px; 
+    border-top-right-radius:10px; 
+    
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE h3{
+    font-size: 1.5rem;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_TITLE p{
+    font-size: 75%;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.CATEGORIES{
+    display: flex;
+    flex-direction: row;
+}
+
+.CATEGORIES span{
+    color: white;
+    background-color: black;
+    font-size: 75%;
+    border-radius: 0px;
+    padding: 4px;
+    margin-right: 10px;
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT {
+    background-color: pink;
+    color: black;
+    width: 100%;
+    padding: 2% ;
+    display: flex;
+    flex-direction: column;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+}
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT h4{
+    margin: 5px;
+    font-size: 1.5rem;
+
+}
+
+.SECTION_THREE_CHILDREN_CONTAINER_CONTENT a{
+    margin-top: 5px;
+    text-decoration: none;
+    border: 0px;
+    border-radius: 10px;
+    padding: 4px;
+    color: white;
+    transition: 1s;
+    background-color: #000000;
+    text-align: center;
+}
+
+.SCROLLABLE_CONTENT {
+    height: 200px; /* Set a fixed height for the scrollable area */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Add padding for better readability */
+    border: 1px solid #000000; /* Optional: Add a border to visually separate */
+    text-align: justify;
+
+}
+
+.SCROLLABLE_CONTENT p{
+    font-size: 75%;
+}
+
+/* Styling the scrollbar */
+.SCROLLABLE_CONTENT::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-track {
+    background: #b33b3b; /* Background of the track */
+    border-radius: 5px; /* Rounded corners for the track */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-thumb {
+    background: #ad5959; /* Color of the thumb */
+    border-radius: 20px; /* Rounded corners for the thumb */
+}
+
+.SCROLLABLE_CONTENT::-webkit-scrollbar-thumb:hover {
+    background: #ff0000; /* Color of the thumb on hover */
+}
+
+/* Optional: For compatibility with Firefox */
+.SCROLLABLE_CONTENT {
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    scrollbar-color: #000000 #f1f1f1; /* Thumb color, track color */
+}
+
+.NEXT_PAGE a{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border: solid #742a2a(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: #742a2a;
+    text-align: center;
+    font-size: 60%;
+}
+
+/* ----------------------------- Footer --------------------------------- */
+.footer {
+    background: url("STEM_SOC_BACKGROUND_COLOR_DARK.svg") center/cover no-repeat;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+    font-family: "Poppins";
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4%;
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 5px 0;
+    font-size: 80%;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.footer-section ul li a:hover,
+.footer-section p a:hover {
+    text-decoration: underline;
+    color: #ea4545;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 80%;
+    margin: 0 20px;
+}
+} 
+
+
+
+/* TO AVOID WIDTH SLIDING  */
+
+@media only screen and (max-width:1024px)
+{
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width:2560px)
+{
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
