@@ -208,7 +208,7 @@ nav img, nav h2 {
     z-index: -1;
     object-fit: fill;
     filter: blur(3px);
-    height: 200vh;
+    height: 100vh;
 }
 
 @media (min-aspect-ratio: 16/9) {
