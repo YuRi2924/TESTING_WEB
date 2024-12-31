@@ -1,0 +1,2868 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Reset margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added to ensure padding and border are included in the element's total width and height */
+  }
+
+  /* Navigation bar */
+  nav {
+    background-color: transparent;
+    /* backdrop-filter: blur(100px); */
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1% 1%;
+    position: relative;
+    top: 30px;
+    width: 95%;
+    margin: auto;
+    animation:  ANIMATION_FADE_DOWN 0.5s ;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav ul.left-nav {
+    justify-content: flex-start;
+}
+
+nav ul.right-nav {
+    justify-content: flex-end;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+    transition: 1s;
+    margin: 0 3px 0 3px;
+    border-radius: 0px;
+}
+
+nav a:hover{
+    color: #ffffff;
+    background-color: rgb(239, 32, 32);
+    border-radius: 0px ;
+    font-size: 20px;
+ 
+}
+
+nav img{
+    height: 100%;
+    padding: 0 0px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    
+}
+
+nav h2{
+    height: 100%;
+    padding: 0 8px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.fa-bars{
+    color: rgb(0, 0, 0);
+}
+
+/* Base styling for sidebar */
+.side_bar { 
+    position: fixed;
+    top: 0;
+    right: -100%; /* Start off-screen */
+    height: 100vh;
+    width: 20%;
+    z-index: 999;
+    background-color: rgb(0 0 0 / 76%);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 20px;
+    transition: 1s; /* Smooth transition for transform and opacity */
+    opacity: 0; /* Start hidden */
+}
+
+/* Styling for list items in the sidebar */
+.side_bar li {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: left;
+    transition: 1s;
+    list-style: none;
+    border-bottom: solid white 2px;
+    padding: 20px;
+}
+
+/* Styling for links within the sidebar */
+.side_bar a {
+    text-decoration: none; /* Remove underline from links */
+    color: white;
+    transition: 1s; 
+    text-decoration: none;
+}
+
+/* Show the sidebar */
+.side_bar.show {
+    transform: translateX(0); /* Move it into view */
+    opacity: 1; /* Make it visible */
+    right: 0; /* Align with the right edge */
+}
+
+.menu {
+    display: none;
+}
+
+/* -------------------------------------------SECTION ONE----------------------------------------------*/
+
+.SECTION_ONE{
+    width: 100%;
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), 
+    url('STEM_SOC_COMMUNITY_MAIN_IMAGE.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Poppins";
+}
+
+.SECTION_ONE_MAIN_CONTENT_PARENT_CONTAINER{
+    width: 100%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS{
+    width: 90%;
+    padding: 4%;
+    color: white;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS h1{
+    width: 100%;
+    font-size: 7rem;
+    line-height: 100%;
+    letter-spacing: 5px;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS p{
+    width: 100%;
+    font-size: 100%;
+    margin: 20px 0 20px 0;
+    border-top: solid 3px rgb(239, 32, 32);
+    padding-top: 10px;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS a{
+    margin-top: 20px;
+    text-decoration: none;
+    border: solid rgb(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS h6{
+    margin-top: 5%;
+    font-weight: 300;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS{
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 20px;
+    
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a:hover{
+    color: red;
+}
+
+/* -------------------------------------SECTION TWO-------------------------------------- */
+
+.SECTION_TWO{
+    width: auto;
+    height: auto;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 4%;
+}
+
+.SECTION_TWO_INTRODUCTORY{
+    width: 100%;
+    margin-bottom: 40px;
+    color: white;
+    text-align: justify;
+}
+
+.SECTION_TWO_INTRODUCTORY h1{
+    font-size: 4rem;
+    text-align: left;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.ORGAZINATIONS_PARENT_CONTAINER{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    background: linear-gradient(to right, #ffffff, #ffffff6e);
+    border-top-left-radius: 100px; /* Round the top-left corner */
+    border: 5px solid pink; /* Apply a pink border */
+    border-right: 20px solid pink;
+    margin-bottom: 20px;
+    box-shadow: 8px 8px 4px rgba(46, 11, 11, 0.427);
+}
+
+.ORGAZINATIONS_CHILDREN_CONTAINER {
+    width:100%;
+    margin-bottom: 20px;
+    
+}
+
+.ORGAZINATIONS_IMAGE_CONTAINER{
+    width: 30%;
+    height: 100%;
+    padding: 1%;
+    
+}
+
+.ORGAZINATIONS_IMAGE_CONTAINER img{
+    width: 100%;
+    border-right: black solid 3px;
+    
+}
+
+.ORGAZINATIONS_CONTENT_CONTAINER{
+    text-align: justify;
+    height: 90%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: black;
+}
+
+.ORGAZINATIONS_CONTENT_CONTAINER h2{
+    font-size: 2rem;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+/* EVENT FOUR */
+
+.SECTION_FOUR{
+    width: 100%;
+    height: 100vh;
+    background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), 
+    url('STEM_SOC_COMMUNITY_MAIN_IMAGE.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Poppins";
+    border-top: #742a2a solid 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.SECTION_FOUR_PARENT{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT{
+    width: 100%;
+    color: white;
+}
+
+.SECTION_FOUR_CHILDREN_IMAGE{
+    width: 80%;
+    padding-left: 4%;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.SECTION_FOUR_CHILDREN_TEXT{
+    padding-right: 4%;
+    padding-left: 3%;
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT h1{
+    font-size: 4rem;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT p{
+    width: 100%;
+    font-size: 100%;
+    margin-bottom: 30px;
+    border-top: solid 3px rgb(239, 32, 32);
+    padding-top: 10px;
+    border-bottom: solid 3px rgb(239, 32, 32);
+    padding-bottom: 10px;
+    text-align: justify;
+
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT h6{
+    width: 100%;
+    font-size: 100%;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 300;
+
+    margin-bottom: 20px;
+    padding-top: 10px;
+    text-align: justify;
+
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT a{
+    margin-top: 20px;
+    text-decoration: none;
+    border: solid rgb(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+    margin-bottom: 20px;
+}
+
+.SECTION_FIVE{
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.SECTION_FIVE_INTRODUCTORY{
+    color: white;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.SECTION_FIVE_INTRODUCTORY h1{
+    font-size: 4rem;
+    text-align: left;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.table-container {
+    margin: 20px auto;
+    width: 100%;
+    overflow-x: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #fff;
+}
+
+thead th {
+    background-color: #742a2a;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+tbody td {
+    padding: 10px 8px;
+    border: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Adjust column widths */
+th:first-child, td:first-child {
+    width: 20%; /* Narrower for Date */
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 80%; /* Wider for Event Title */
+}
+
+table th, table td {
+    word-wrap: break-word; /* Ensure content wraps properly */
+}
+
+/* ---------------------------------------FOOTER------------------------------------------- */
+
+
+.footer {
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_DARK.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+    font-family: "Poppins";
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    justify-content: space-around; /* Even spacing */
+    padding: 0 10%;
+}
+
+.footer-section {
+    flex: 1 1 30%; /* Equal width sections */
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff; /* Underline effect */
+    padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff; /* Link color */
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+    color: #420c0c; /* Lighter hover effect */
+}
+
+.footer-section p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section p a:hover {
+    text-decoration: underline;
+    color: #420c0c;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #fff; /* Divider line */
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 320px){
+
+    .PHONE_HIDE{
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        font-size: 10px;
+    }
+  
+    .rLinks {
+        display: none;
+    }
+
+
+     
+    /* Navigation bar */
+      nav {
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 1% 1%;
+        position: relative;
+        top: 20px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul.left-nav {
+        justify-content: flex-start;
+    }
+    
+    nav ul.right-nav {
+        justify-content: flex-end;
+    }
+    
+    nav li {
+        height: 50px;
+    }
+    
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+        transition: 1s;
+        margin: 0 3px 0 3px;
+        border-radius: 40px;
+    }
+    
+    nav a:hover{
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 80px ;
+        font-size: 20px;
+    }
+
+    nav img{
+        height: 100%;
+        padding: 0 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    
+    nav h2{
+        height: 100%;
+        padding: 0 4px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .fa-bars{
+        color: rgb(0, 0, 0);
+    }
+    
+    /* Base styling for sidebar */
+    .side_bar { 
+        position: fixed;
+        top: 0;
+        right: -100%; /* Start off-screen */
+        height: 100vh;
+        width: 100%;
+        z-index: 999;
+        background-color: rgb(0 0 0 / 76%);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 20px;
+        transition: 1s; /* Smooth transition for transform and opacity */
+        opacity: 0; /* Start hidden */
+    }
+    
+    /* Styling for list items in the sidebar */
+    .side_bar li {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        text-align: left; /* Center align text and images */
+        transition: 1s; 
+        list-style: none;
+    }
+    
+    /* Styling for links within the sidebar */
+    .side_bar a {
+        text-decoration: none; /* Remove underline from links */
+        color: white;
+        transition: 1s; 
+        text-decoration: none;
+    }
+    
+    /* Show the sidebar */
+    .side_bar.show {
+        transform: translateX(0); /* Move it into view */
+        opacity: 1; /* Make it visible */
+        right: 0; /* Align with the right edge */
+    }
+
+/* -------------------------------------------SECTION ONE----------------------------------------------*/
+
+.SECTION_ONE {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), url('STEM_SOC_COMMUNITY_MAIN_IMAGE.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins";
+}
+
+.SECTION_ONE_MAIN_CONTENT_PARENT_CONTAINER {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS {
+    width: 100%;
+    padding: 5%;
+    color: white;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS p {
+    width: 100%;
+    font-size: 70%;
+    margin: 5px 0 10px 0;
+    border-top: 3px solid rgb(239, 32, 32);
+    padding-top: 5px;
+    text-align: left;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS a {
+    font-size: 70%;
+    text-decoration: none;
+    border: 2px solid rgb(239, 32, 32);
+    padding: 4px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS{
+    width: 8%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 20px;
+    
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a:hover{
+    color: red;
+}
+
+
+/* -------------------------------------SECTION TWO-------------------------------------- */
+
+.SECTION_TWO{
+    width: auto;
+    height: auto;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 4%;
+}
+
+.SECTION_TWO_INTRODUCTORY{
+    width: 100%;
+    margin-bottom: 40px;
+    color: white;
+    text-align: justify;
+}
+
+.SECTION_TWO_INTRODUCTORY h1{
+    font-size: 2rem;
+    text-align: left;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.SECTION_TWO_INTRODUCTORY p{
+    font-size: 70%;
+}
+
+.ORGAZINATIONS_PARENT_CONTAINER{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    background: pink;
+    border-top-left-radius: 0px; /* Round the top-left corner */
+    border: 2px solid rgb(0, 0, 0); /* Apply a pink border */
+    border-right: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 8px 8px 4px rgba(46, 11, 11, 0.427);
+}
+
+.ORGAZINATIONS_CHILDREN_CONTAINER {
+    width:100%;
+    margin-bottom: 20px;
+    background-color: white;
+    
+}
+
+.ORGAZINATIONS_IMAGE_CONTAINER{
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: #000000 2px solid;
+}
+
+.ORGAZINATIONS_IMAGE_CONTAINER img{
+    width: 100%;
+    border-right: none;
+    
+    
+}
+
+.ORGAZINATIONS_CONTENT_CONTAINER{
+    text-align: justify;
+    height: 100%;
+    padding: 4%;
+    color: black;
+    background-color: pink;
+}
+
+.ORGAZINATIONS_CONTENT_CONTAINER h2{
+    font-size: 1.5rem;
+    line-height: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.ORGAZINATIONS_CONTENT_CONTAINER p{
+    font-size: 70%;
+    text-align: justify;
+}
+
+/* EVENT FOUR */
+
+.SECTION_FOUR{
+    width: 100%;
+    height: auto;
+    background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), 
+    url('STEM_SOC_COMMUNITY_MAIN_IMAGE.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Poppins";
+    border-top: #742a2a solid 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.SECTION_FOUR_PARENT{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT{
+    width: 100%;
+    color: white;
+}
+
+.SECTION_FOUR_CHILDREN_IMAGE{
+    width: 100%;
+    padding-left: 0%;
+    margin-bottom: 5%;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT img{
+    width: 100%;
+    border-radius: 0px;
+}
+
+.SECTION_FOUR_CHILDREN_TEXT{
+    padding-right: 0%;
+    padding-left: 0%;
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT h1{
+    font-size: 2rem;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT p{
+    width: 100%;
+    font-size: 70%;
+    margin-bottom: 30px;
+    border-top: solid 3px rgb(239, 32, 32);
+    padding-top: 10px;
+    border-bottom: solid 3px rgb(239, 32, 32);
+    padding-bottom: 10px;
+    text-align: justify;
+
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT h6{
+    width: 100%;
+    font-size: 50%;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 300;
+
+    margin-bottom: 20px;
+    padding-top: 10px;
+    text-align: justify;
+
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT a{
+    margin-top: 20px;
+    text-decoration: none;
+    border: solid rgb(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+    margin-bottom: 20px;
+    font-size: 70%;
+}
+
+.SECTION_FIVE{
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.SECTION_FIVE_INTRODUCTORY{
+    color: white;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.SECTION_FIVE_INTRODUCTORY h1{
+    font-size: 2rem;
+    text-align: left;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.SECTION_FIVE_INTRODUCTORY p{
+    font-size: 70%;
+    text-align: justify;
+    margin-bottom: 0px;
+
+}
+
+.table-container {
+    margin: 20px auto;
+    width: 100%;
+    overflow-x: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #fff;
+}
+
+thead th {
+    background-color: #742a2a;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+tbody td {
+    padding: 10px 8px;
+    border: 1px solid #ddd;
+    font-size: 70%;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Adjust column widths */
+th:first-child, td:first-child {
+    width: 20%; /* Narrower for Date */
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 80%; /* Wider for Event Title */
+}
+
+table th, table td {
+    word-wrap: break-word; /* Ensure content wraps properly */
+}
+
+
+/* ----------------------------- Footer --------------------------------- */
+.footer {
+    background: url("STEM_SOC_BACKGROUND_COLOR_DARK.svg") center/cover no-repeat;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+    font-family: "Poppins";
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4%;
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 5px 0;
+    font-size: 70%;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.footer-section ul li a:hover,
+.footer-section p a:hover {
+    text-decoration: underline;
+    color: #ea4545;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 70%;
+    margin: 0 20px;
+}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 425px){
+   
+    .PHONE_HIDE{
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        font-size: 10px;
+    }
+  
+    .rLinks {
+        display: none;
+    }
+
+
+     
+    /* Navigation bar */
+      nav {
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 1% 1%;
+        position: relative;
+        top: 20px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul.left-nav {
+        justify-content: flex-start;
+    }
+    
+    nav ul.right-nav {
+        justify-content: flex-end;
+    }
+    
+    nav li {
+        height: 50px;
+    }
+    
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+        transition: 1s;
+        margin: 0 3px 0 3px;
+        border-radius: 40px;
+    }
+    
+    nav a:hover{
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 80px ;
+        font-size: 20px;
+    }
+
+    nav img{
+        height: 100%;
+        padding: 0 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    
+    nav h2{
+        height: 100%;
+        padding: 0 4px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .fa-bars{
+        color: rgb(0, 0, 0);
+    }
+    
+    /* Base styling for sidebar */
+    .side_bar { 
+        position: fixed;
+        top: 0;
+        right: -100%; /* Start off-screen */
+        height: 100vh;
+        width: 100%;
+        z-index: 999;
+        background-color: rgb(0 0 0 / 76%);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 20px;
+        transition: 1s; /* Smooth transition for transform and opacity */
+        opacity: 0; /* Start hidden */
+    }
+    
+    /* Styling for list items in the sidebar */
+    .side_bar li {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        text-align: left; /* Center align text and images */
+        transition: 1s; 
+        list-style: none;
+    }
+    
+    /* Styling for links within the sidebar */
+    .side_bar a {
+        text-decoration: none; /* Remove underline from links */
+        color: white;
+        transition: 1s; 
+        text-decoration: none;
+    }
+    
+    /* Show the sidebar */
+    .side_bar.show {
+        transform: translateX(0); /* Move it into view */
+        opacity: 1; /* Make it visible */
+        right: 0; /* Align with the right edge */
+    }
+
+/* -------------------------------------------SECTION ONE----------------------------------------------*/
+.SECTION_ONE {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), url('STEM_SOC_COMMUNITY_MAIN_IMAGE.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins";
+}
+
+.SECTION_ONE_MAIN_CONTENT_PARENT_CONTAINER {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS {
+    width: 100%;
+    padding: 5%;
+    color: white;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS p {
+    width: 100%;
+    font-size: 70%;
+    margin: 5px 0 10px 0;
+    border-top: 3px solid rgb(239, 32, 32);
+    padding-top: 5px;
+    text-align: left;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS a {
+    font-size: 70%;
+    text-decoration: none;
+    border: 2px solid rgb(239, 32, 32);
+    padding: 4px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS{
+    width: 8%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 20px;
+    
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a:hover{
+    color: red;
+}
+
+
+/* -------------------------------------SECTION TWO-------------------------------------- */
+
+.SECTION_TWO{
+    width: auto;
+    height: auto;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 4%;
+}
+
+.SECTION_TWO_INTRODUCTORY{
+    width: 100%;
+    margin-bottom: 40px;
+    color: white;
+    text-align: justify;
+}
+
+.SECTION_TWO_INTRODUCTORY h1{
+    font-size: 2rem;
+    text-align: left;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.SECTION_TWO_INTRODUCTORY p{
+    font-size: 70%;
+}
+
+.ORGAZINATIONS_PARENT_CONTAINER{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    background: pink;
+    border-top-left-radius: 0px; /* Round the top-left corner */
+    border: 2px solid rgb(0, 0, 0); /* Apply a pink border */
+    border-right: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 8px 8px 4px rgba(46, 11, 11, 0.427);
+}
+
+.ORGAZINATIONS_CHILDREN_CONTAINER {
+    width:100%;
+    margin-bottom: 20px;
+    background-color: white;
+    
+}
+
+.ORGAZINATIONS_IMAGE_CONTAINER{
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: #000000 2px solid;
+}
+
+.ORGAZINATIONS_IMAGE_CONTAINER img{
+    width: 100%;
+    border-right: none;
+    
+    
+}
+
+.ORGAZINATIONS_CONTENT_CONTAINER{
+    text-align: justify;
+    height: 100%;
+    padding: 4%;
+    color: black;
+    background-color: pink;
+}
+
+.ORGAZINATIONS_CONTENT_CONTAINER h2{
+    font-size: 1.5rem;
+    line-height: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.ORGAZINATIONS_CONTENT_CONTAINER p{
+    font-size: 70%;
+    text-align: justify;
+}
+
+/* EVENT FOUR */
+
+.SECTION_FOUR{
+    width: 100%;
+    height: auto;
+    background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), 
+    url('STEM_SOC_COMMUNITY_MAIN_IMAGE.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Poppins";
+    border-top: #742a2a solid 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.SECTION_FOUR_PARENT{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT{
+    width: 100%;
+    color: white;
+}
+
+.SECTION_FOUR_CHILDREN_IMAGE{
+    width: 100%;
+    padding-left: 0%;
+    margin-bottom: 5%;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT img{
+    width: 100%;
+    border-radius: 0px;
+}
+
+.SECTION_FOUR_CHILDREN_TEXT{
+    padding-right: 0%;
+    padding-left: 0%;
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT h1{
+    font-size: 2rem;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT p{
+    width: 100%;
+    font-size: 70%;
+    margin-bottom: 30px;
+    border-top: solid 3px rgb(239, 32, 32);
+    padding-top: 10px;
+    border-bottom: solid 3px rgb(239, 32, 32);
+    padding-bottom: 10px;
+    text-align: justify;
+
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT h6{
+    width: 100%;
+    font-size: 50%;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 300;
+
+    margin-bottom: 20px;
+    padding-top: 10px;
+    text-align: justify;
+
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT a{
+    margin-top: 20px;
+    text-decoration: none;
+    border: solid rgb(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+    margin-bottom: 20px;
+    font-size: 70%;
+}
+
+.SECTION_FIVE{
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.SECTION_FIVE_INTRODUCTORY{
+    color: white;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.SECTION_FIVE_INTRODUCTORY h1{
+    font-size: 2rem;
+    text-align: left;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.SECTION_FIVE_INTRODUCTORY p{
+    font-size: 70%;
+    text-align: justify;
+    margin-bottom: 0px;
+
+}
+
+.table-container {
+    margin: 20px auto;
+    width: 100%;
+    overflow-x: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #fff;
+}
+
+thead th {
+    background-color: #742a2a;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+tbody td {
+    padding: 10px 8px;
+    border: 1px solid #ddd;
+    font-size: 70%;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Adjust column widths */
+th:first-child, td:first-child {
+    width: 20%; /* Narrower for Date */
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 80%; /* Wider for Event Title */
+}
+
+table th, table td {
+    word-wrap: break-word; /* Ensure content wraps properly */
+}
+
+/* ----------------------------- Footer --------------------------------- */
+.footer {
+    background: url("STEM_SOC_BACKGROUND_COLOR_DARK.svg") center/cover no-repeat;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+    font-family: "Poppins";
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4%;
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 5px 0;
+    font-size: 75%;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.footer-section ul li a:hover,
+.footer-section p a:hover {
+    text-decoration: underline;
+    color: #ea4545;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 75%;
+    margin: 0 20px;
+}
+}
+@media only screen and (min-width: 425px) and (max-width: 768px){
+
+     
+    .PHONE_HIDE{
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        font-size: 10px;
+    }
+  
+    .rLinks {
+        display: none;
+    }
+
+    video {
+        display: none;
+    }
+     
+    /* Navigation bar */
+      nav {
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 1% 1%;
+        position: relative;
+        top: 20px;
+        width: 100%;
+        margin: auto;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul.left-nav {
+        justify-content: flex-start;
+    }
+    
+    nav ul.right-nav {
+        justify-content: flex-end;
+    }
+    
+    nav li {
+        height: 50px;
+    }
+    
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+        transition: 1s;
+        margin: 0 3px 0 3px;
+        border-radius: 40px;
+    }
+    
+    nav a:hover{
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 80px ;
+        font-size: 20px;
+    }
+
+    nav img{
+        height: 100%;
+        padding: 0 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    
+    nav h2{
+        height: 100%;
+        padding: 0 4px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 10px;
+        line-height: 1;
+    }
+
+    .fa-bars{
+        color: rgb(0, 0, 0);
+    }
+    
+    /* Base styling for sidebar */
+    .side_bar { 
+        position: fixed;
+        top: 0;
+        right: -100%; /* Start off-screen */
+        height: 100vh;
+        width: 100%;
+        z-index: 999;
+        background-color: rgb(0 0 0 / 76%);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 20px;
+        transition: 1s; /* Smooth transition for transform and opacity */
+        opacity: 0; /* Start hidden */
+    }
+    
+    /* Styling for list items in the sidebar */
+    .side_bar li {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        text-align: left; /* Center align text and images */
+        transition: 1s; 
+        list-style: none;
+    }
+    
+    /* Styling for links within the sidebar */
+    .side_bar a {
+        text-decoration: none; /* Remove underline from links */
+        color: white;
+        transition: 1s; 
+        text-decoration: none;
+    }
+    
+    /* Show the sidebar */
+    .side_bar.show {
+        transform: translateX(0); /* Move it into view */
+        opacity: 1; /* Make it visible */
+        right: 0; /* Align with the right edge */
+    }
+
+/* -------------------------------------------SECTION ONE----------------------------------------------*/
+    
+.SECTION_ONE {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), url('STEM_SOC_COMMUNITY_MAIN_IMAGE.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins";
+}
+
+.SECTION_ONE_MAIN_CONTENT_PARENT_CONTAINER {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS {
+    width: 100%;
+    padding: 5%;
+    color: white;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS p {
+    width: 100%;
+    font-size: 70%;
+    margin: 5px 0 10px 0;
+    border-top: 3px solid rgb(239, 32, 32);
+    padding-top: 5px;
+    text-align: left;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS a {
+    font-size: 70%;
+    text-decoration: none;
+    border: 2px solid rgb(239, 32, 32);
+    padding: 4px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS{
+    width: 8%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 20px;
+    
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a:hover{
+    color: red;
+}
+
+
+/* -------------------------------------SECTION TWO-------------------------------------- */
+
+.SECTION_TWO{
+    width: auto;
+    height: auto;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 4%;
+}
+
+.SECTION_TWO_INTRODUCTORY{
+    width: 100%;
+    margin-bottom: 40px;
+    color: white;
+    text-align: justify;
+}
+
+.SECTION_TWO_INTRODUCTORY h1{
+    font-size: 2rem;
+    text-align: left;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.SECTION_TWO_INTRODUCTORY p{
+    font-size: 70%;
+}
+
+.ORGAZINATIONS_PARENT_CONTAINER{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    background: pink;
+    border-top-left-radius: 0px; /* Round the top-left corner */
+    border: 2px solid rgb(0, 0, 0); /* Apply a pink border */
+    border-right: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 8px 8px 4px rgba(46, 11, 11, 0.427);
+}
+
+.ORGAZINATIONS_CHILDREN_CONTAINER {
+    width:100%;
+    margin-bottom: 20px;
+    background-color: white;
+    
+}
+
+.ORGAZINATIONS_IMAGE_CONTAINER{
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 5%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: #000000 2px solid;
+}
+
+.ORGAZINATIONS_IMAGE_CONTAINER img{
+    width: 100%;
+    border-right: none;
+    
+    
+}
+
+.ORGAZINATIONS_CONTENT_CONTAINER{
+    text-align: justify;
+    height: 100%;
+    padding: 4%;
+    color: black;
+    background-color: pink;
+}
+
+.ORGAZINATIONS_CONTENT_CONTAINER h2{
+    font-size: 1.5rem;
+    line-height: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.ORGAZINATIONS_CONTENT_CONTAINER p{
+    font-size: 70%;
+    text-align: justify;
+}
+
+/* EVENT FOUR */
+
+.SECTION_FOUR{
+    width: 100%;
+    height: auto;
+    background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), 
+    url('STEM_SOC_COMMUNITY_MAIN_IMAGE.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Poppins";
+    border-top: #742a2a solid 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.SECTION_FOUR_PARENT{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT{
+    width: 100%;
+    color: white;
+}
+
+.SECTION_FOUR_CHILDREN_IMAGE{
+    width: 100%;
+    padding-left: 0%;
+    margin-bottom: 5%;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT img{
+    width: 100%;
+    border-radius: 0px;
+}
+
+.SECTION_FOUR_CHILDREN_TEXT{
+    padding-right: 0%;
+    padding-left: 0%;
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT h1{
+    font-size: 2rem;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT p{
+    width: 100%;
+    font-size: 70%;
+    margin-bottom: 30px;
+    border-top: solid 3px rgb(239, 32, 32);
+    padding-top: 10px;
+    border-bottom: solid 3px rgb(239, 32, 32);
+    padding-bottom: 10px;
+    text-align: justify;
+
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT h6{
+    width: 100%;
+    font-size: 50%;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 300;
+
+    margin-bottom: 20px;
+    padding-top: 10px;
+    text-align: justify;
+
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT a{
+    margin-top: 20px;
+    text-decoration: none;
+    border: solid rgb(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+    margin-bottom: 20px;
+    font-size: 70%;
+}
+
+.SECTION_FIVE{
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.SECTION_FIVE_INTRODUCTORY{
+    color: white;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.SECTION_FIVE_INTRODUCTORY h1{
+    font-size: 2rem;
+    text-align: left;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.SECTION_FIVE_INTRODUCTORY p{
+    font-size: 70%;
+    text-align: justify;
+    margin-bottom: 0px;
+
+}
+
+.table-container {
+    margin: 20px auto;
+    width: 100%;
+    overflow-x: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #fff;
+}
+
+thead th {
+    background-color: #742a2a;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+tbody td {
+    padding: 10px 8px;
+    border: 1px solid #ddd;
+    font-size: 70%;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Adjust column widths */
+th:first-child, td:first-child {
+    width: 20%; /* Narrower for Date */
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 80%; /* Wider for Event Title */
+}
+
+table th, table td {
+    word-wrap: break-word; /* Ensure content wraps properly */
+}
+   
+
+/* ----------------------------- Footer --------------------------------- */
+.footer {
+    background: url("STEM_SOC_BACKGROUND_COLOR_DARK.svg") center/cover no-repeat;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+    font-family: "Poppins";
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4%;
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 5px 0;
+    font-size: 70%;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.footer-section ul li a:hover,
+.footer-section p a:hover {
+    text-decoration: underline;
+    color: #ea4545;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 70%;
+    margin: 0 20px;
+}
+}  
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {  
+
+      
+    .PHONE_HIDE{
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        font-size: 15px;
+    }
+  
+    .rLinks {
+        display: none;
+    }
+
+    video {
+        display: none;
+    }
+     
+    /* Navigation bar */
+      nav {
+        background-color: transparent;
+        backdrop-filter: blur(0px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 1% 1%;
+        position: relative;
+        top: 20px;
+        width: 95%;
+        margin: auto;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav ul.left-nav {
+        justify-content: flex-start;
+    }
+    
+    nav ul.right-nav {
+        justify-content: flex-end;
+    }
+    
+    nav li {
+        height: 50px;
+    }
+    
+    nav a{
+        height: 100%;
+        padding: 0 20px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+        transition: 1s;
+        margin: 0 3px 0 3px;
+        border-radius: 40px;
+    }
+    
+    nav a:hover{
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 80px ;
+        font-size: 20px;
+    }
+
+    nav img{
+        height: 100%;
+        padding: 0 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    
+    nav h2{
+        height: 100%;
+        padding: 0 4px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 15px;
+        line-height: 1;
+    }
+
+    .fa-bars{
+        color: rgb(0, 0, 0);
+    }
+    
+    /* Base styling for sidebar */
+    .side_bar { 
+        position: fixed;
+        top: 0;
+        right: -100%; /* Start off-screen */
+        height: 100vh;
+        width: 100%;
+        z-index: 999;
+        background-color: rgb(0 0 0 / 76%);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        justify-content: flex-end;
+        padding: 20px;
+        transition: 1s; /* Smooth transition for transform and opacity */
+        opacity: 0; /* Start hidden */
+    }
+    
+    /* Styling for list items in the sidebar */
+    .side_bar li {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        text-align: left; /* Center align text and images */
+        transition: 1s; 
+        list-style: none;
+    }
+    
+    /* Styling for links within the sidebar */
+    .side_bar a {
+        text-decoration: none; /* Remove underline from links */
+        color: white;
+        transition: 1s; 
+        text-decoration: none;
+    }
+    
+    /* Show the sidebar */
+    .side_bar.show {
+        transform: translateX(0); /* Move it into view */
+        opacity: 1; /* Make it visible */
+        right: 0; /* Align with the right edge */
+    }
+
+/* -------------------------------------------SECTION ONE----------------------------------------------*/
+.SECTION_ONE {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), url('STEM_SOC_COMMUNITY_MAIN_IMAGE.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Poppins";
+}
+
+.SECTION_ONE_MAIN_CONTENT_PARENT_CONTAINER {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS {
+    width: 100%;
+    padding: 5%;
+    color: white;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS p {
+    width: 100%;
+    font-size: 70%;
+    margin: 5px 0 10px 0;
+    border-top: 3px solid rgb(239, 32, 32);
+    padding-top: 5px;
+    text-align: left;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_HEADER_PARAGRAPHS a {
+    font-size: 70%;
+    text-decoration: none;
+    border: 2px solid rgb(239, 32, 32);
+    padding: 4px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS{
+    width: 8%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 20px;
+    
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a{
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.SECTION_ONE_MAIN_CONTENT_CHILDREN_CONTAINER_ICONS a:hover{
+    color: red;
+}
+
+
+/* -------------------------------------SECTION TWO-------------------------------------- */
+
+.SECTION_TWO{
+    width: auto;
+    height: auto;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 4%;
+}
+
+.SECTION_TWO_INTRODUCTORY{
+    width: 100%;
+    margin-bottom: 40px;
+    color: white;
+    text-align: justify;
+}
+
+.SECTION_TWO_INTRODUCTORY h1{
+    font-size: 2rem;
+    text-align: left;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.SECTION_TWO_INTRODUCTORY p{
+    font-size: 80%;
+}
+
+.ORGAZINATIONS_PARENT_CONTAINER{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    background: pink;
+    border-top-left-radius: 0px; /* Round the top-left corner */
+    border: 2px solid rgb(0, 0, 0); /* Apply a pink border */
+    border-right: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 8px 8px 4px rgba(46, 11, 11, 0.427);
+}
+
+.ORGAZINATIONS_CHILDREN_CONTAINER {
+    width:100%;
+    margin-bottom: 20px;
+    background-color: white;
+    
+}
+
+.ORGAZINATIONS_IMAGE_CONTAINER{
+    width: 100%;
+    padding: 0%;
+    margin-bottom: 0%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom: none;
+    border-right: #000000 solid 2px;
+}
+
+.ORGAZINATIONS_IMAGE_CONTAINER img{
+    width: 100%;
+    border-right: none;
+    
+    
+}
+
+.ORGAZINATIONS_CONTENT_CONTAINER{
+    text-align: justify;
+    height: 100%;
+    padding: 4%;
+    color: black;
+    margin-bottom: 0%;
+    background-color: pink;
+    
+}
+
+.ORGAZINATIONS_CONTENT_CONTAINER h2{
+    font-size: 1.5rem;
+    line-height: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.ORGAZINATIONS_CONTENT_CONTAINER p{
+    font-size: 70%;
+    text-align: justify;
+}
+
+/* EVENT FOUR */
+
+.SECTION_FOUR{
+    width: 100%;
+    height: auto;
+    background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.801), rgba(0, 0, 0, 0.639)), 
+    url('STEM_SOC_COMMUNITY_MAIN_IMAGE.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: "Poppins";
+    border-top: #742a2a solid 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.SECTION_FOUR_PARENT{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT{
+    width: 100%;
+    color: white;
+}
+
+.SECTION_FOUR_CHILDREN_IMAGE{
+    width: 100%;
+    padding-left: 0%;
+    margin-bottom: 0%;
+    padding-right: 5%;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT img{
+    width: 100%;
+    border-radius: 0px;
+}
+
+.SECTION_FOUR_CHILDREN_TEXT{
+    padding-right: 0%;
+    padding-left: 0%;
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT h1{
+    font-size: 2rem;
+    line-height: 100%;
+    margin-bottom: 20px;
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT p{
+    width: 100%;
+    font-size: 80%;
+    margin-bottom: 30px;
+    border-top: solid 3px rgb(239, 32, 32);
+    padding-top: 10px;
+    border-bottom: solid 3px rgb(239, 32, 32);
+    padding-bottom: 10px;
+    text-align: justify;
+
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT h6{
+    width: 100%;
+    font-size: 50%;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    text-align: justify;
+
+
+}
+
+.SECTION_FOUR_CHILDREN_CONTENT a{
+    margin-top: 20px;
+    text-decoration: none;
+    border: solid rgb(239, 32, 32) 2px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    transition: 1s;
+    background-color: rgb(239, 32, 32);
+    margin-bottom: 20px;
+    font-size: 80%;
+}
+
+.SECTION_FIVE{
+    width: 100%;
+    height: auto;
+    padding: 4%;
+    background-image: url('STEM_SOC_BACKGROUND_COLOR_LIGHT.svg');
+    background-size: cover;
+    background-repeat: no-repeat; /* Optional: Prevents tiling of the image */
+    background-position: center; /* Optional: Centers the image */
+    border-top: #742a2a solid 10px;
+    font-family: "Poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.SECTION_FIVE_INTRODUCTORY{
+    color: white;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.SECTION_FIVE_INTRODUCTORY h1{
+    font-size: 2rem;
+    text-align: left;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.SECTION_FIVE_INTRODUCTORY p{
+    font-size: 80%;
+    text-align: justify;
+    margin-bottom: 0px;
+
+}
+
+.table-container {
+    margin: 20px auto;
+    width: 100%;
+    overflow-x: auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: #fff;
+}
+
+thead th {
+    background-color: #742a2a;
+    color: #fff;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+tbody td {
+    padding: 10px 8px;
+    border: 1px solid #ddd;
+    font-size: 80%;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Adjust column widths */
+th:first-child, td:first-child {
+    width: 20%; /* Narrower for Date */
+}
+
+th:nth-child(2), td:nth-child(2) {
+    width: 80%; /* Wider for Event Title */
+}
+
+table th, table td {
+    word-wrap: break-word; /* Ensure content wraps properly */
+}
+
+
+/* ----------------------------- Footer --------------------------------- */
+.footer {
+    background: url("STEM_SOC_BACKGROUND_COLOR_DARK.svg") center/cover no-repeat;
+    color: #fff;
+    padding: 20px 0;
+    text-align: left;
+    font-family: "Poppins";
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 4%;
+}
+
+.footer-section {
+    flex: 1 1 30%;
+    margin: 10px;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 100%;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section ul {
+    margin: 5px 0;
+    font-size: 80%;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 500ms;
+}
+
+.footer-section ul li a:hover,
+.footer-section p a:hover {
+    text-decoration: underline;
+    color: #ea4545;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #fff;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    color: #fff;
+    font-size: 80%;
+    margin: 0 20px;
+}
+} 
+
+
+
+/* TO AVOID WIDTH SLIDING  */
+
+@media only screen and (max-width:1024px)
+{
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-width:2560px)
+{
+    html,body{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
